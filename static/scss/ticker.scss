@@ -1,0 +1,127 @@
+@import 'normalize';
+
+.page-header {
+  text-align: center;
+}
+
+.match-list {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  border-spacing: 0;
+  font-family: CaviarDreamsBold;
+
+  td {
+    padding: 10px;
+
+    &.left-team {
+      text-align: right;
+    }
+
+    &.right-team {
+      text-align: left;
+    }
+
+    a {
+      &.league {
+        color: #65C758;
+      }
+      &.team {
+        color: #47CFDE;
+      }
+    }
+  }
+  
+  tr {
+    border: 1px solid #d0d0d0;
+  }
+}
+
+#minimal {
+  text-align: center;
+  .demo {
+    display: inline-block;
+  }
+}
+
+.site-header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+
+  background: -webkit-linear-gradient(#efefef, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#efefef, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#efefef, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#efefeff, #fff); /* Standard syntax */
+
+}
+
+
+.main-nav {
+  display: inline-block;
+  ul {
+    display: table;
+    content: '';
+    
+    li {
+      float: left;
+      padding: 0 8px;
+
+      a:hover {
+        cursor: pointer;
+      }
+      
+      .home {
+        &:hover, &.current {
+          color: #F76331;
+        }
+      }
+     
+      .teams {
+        &:hover, &.current {
+          color: #47CFDE;
+        }
+      }
+      
+      .leagues {
+        &:hover, &.current {
+          color: #65C758;
+        }
+      }
+
+      .profile {
+        &:hover, &.current {
+          color: #BD6BFF;
+        }
+      }
+    }
+  }
+}
+
+
+.flag {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-size: 30px 25px;
+}
+
+.EG {
+  background-image: url('../static/images/eg.png');
+}
+
+.Navi {
+  background-image: url('../static/images/navi.png');
+}
+
+.Cloud9 {
+  background-image: url('../static/images/c9.png');
+}
+
+.SNA {
+  background-image: url('../static/images/sna.png');
+}
+
+.demo div.jQBracket {
+  font-family: CaviarDreamsBold;
+}

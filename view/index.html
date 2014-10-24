@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="ticker">
+  <head>
+    <script src="../vendor/angular.min.js"></script>
+    <script src="../static/js/ticker.js"></script>
+    <script src="../vendor/jquery-2.1.1.min.js"></script>
+    <script src="../vendor/jquery.bracket.min.js"></script>
+
+    <link rel="stylesheet" href="../static/css/ticker.css">
+    <link rel="stylesheet" href="../vendor/jquery.bracket.min.css">
+  </head>
+  <body>
+
+    <header class="site-header">
+      <nav class="main-nav">
+        <ul>
+          <li><a class="home current">Ggwp</a></li>
+          <li><a class="teams">Teams</a></li>
+          <li><a class="leagues">Leagues</a></li>
+          <li><a class="profile">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="page-header">
+      <h1>Upcoming Matches</h1>
+    </div>
+
+
+
+    <div ng-controller="matchList">
+      <table class="match-list">'
+        <tr>
+          <th colspan="5">Matchup</th>
+          <th>Date</th>
+          <th>League</th>
+        </tr>
+        <tr ng-repeat="match in matches" class="match">
+          <td class="left-team">
+            <a href="{{match.team1.url}}" class="flag {{match.team1.name}}"></a>
+          </td>
+          <td>
+            <a href="{{match.team1.url}}" class="team">{{match.team1.name}}</a>
+          </td>
+          <td>vs.</td>
+          <td>
+            <a href="{{match.team2.url}}" class="team">{{match.team2.name}}</a>
+          </td>
+          <td class="right-team">
+            <a href="{{match.team2.url}}" class="flag {{match.team2.name}}"></a>
+          </td>
+          <td>{{match.datetime}}</td>
+          <td><a class="league" href="{{match.league.url}}">{{match.league.name}}</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
