@@ -2,10 +2,10 @@ header.site-header
   nav.main-nav
     ul
       li
-        a.home.current(href='/') Clanimals 
+        a.home(href='/', class=current === "home" ? "current" : "") Clanimals 
       li
-        a.teams Teams
+        a.teams(href='/teams', class=current === "teams" ? "current" : "") Teams
       li
-        a.leagues Leagues
+        a.leagues(href='/leagues', class=current === "leagues" ? "current" : "") Leagues
       li
-        a.profile Profile
+        a.profile(href='/profile', class=current === "profile" ? "current" : "") Profile

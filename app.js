@@ -20,19 +20,19 @@ app.use(express.static(__dirname + '/public'))
 //}
 
 app.get('/', function(request, response) {
-  response.render('index', {title: 'Hey', message: 'Hello There!'});
+  response.render('index', {current: 'home'});
 })
 
 app.get('/teams', function(request, response) {
-  response.render('teams/index', {});
+  response.render('teams/index', {current: 'teams'});
 })
 
 app.get('/leagues', function(request, response) {
-  response.render('leagues/index', {});
+  response.render('leagues/index', {current: 'leagues'});
 })
 
 app.get('/profile', function(request, response) {
-  response.render('profile/index', {});
+  response.render('profile/index', {current: 'profile'});
 })
 //End Routes
 

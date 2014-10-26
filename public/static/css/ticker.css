@@ -19,7 +19,8 @@ table {
   border-collapse: collapse; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none; 
+  color: initial; }
 
 .page-header {
   text-align: center; }
