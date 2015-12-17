@@ -1,2 +1,118 @@
-Hello World!
-test
+<html>
+  <head>
+    <script src="static/js/jquery-2.1.4.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: #c9a2ff;
+      }
+      html {
+        font-family: "Helvetica", Georgia, Serif;
+        color: #444655;
+        background-color: #e9ecff;
+      }
+  
+      body {
+        margin: 0;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+
+      body>header {
+        flex: 0 0 60px;
+      }
+
+      body>header nav {
+        background-color: #ffffff;
+        height: 60px;
+        box-shadow: 0 0 1px 0 #333333;
+      }
+
+      body>header nav .container {
+        max-width: 1080px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      body>header nav .link {
+        color: initial;
+        height: 60px;
+        line-height: 60px;
+        font-weight: 600;
+        font-size: 1.8em;
+        transition: color 0.3s ease-in-out;
+      }
+
+      body>header nav .link:hover {
+        color: #5e6cd3;
+      }
+
+      body>main {
+        flex: 1 1 0;
+        display: flex;
+        margin: 0 auto;
+      }
+
+      body>footer {
+        flex: 0 0 40px;
+        background-color: #8a58d1;
+      }
+
+      section.content {
+        width: 900px;
+        margin: 0 auto;
+        padding: 20px 0px;
+        text-align: center;
+      }
+
+      section.cover {
+        background-image: url("static/images/cover.jpg");
+        background-size: auto 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 100%;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 1.8em;
+      }
+
+      p {
+        line-height: 1.5em;
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <a class="link" href="#">Home</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <h1>
+          A Place just for Us 
+        </h1>
+        <p>
+          Hi. I've made this is space as a personal space for us. It may not be much right now, but everything you see
+          was written by hand, with love, by me :)
+        </p>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
